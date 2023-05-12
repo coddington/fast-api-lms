@@ -2,7 +2,9 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-SQLALCHEMY_DATABASE_URL = "postgresql+psycopg2://gwen@localhost/fast_lms"
+# SQLALCHEMY_DATABASE_URL = "postgresql+psycopg2://gwen@localhost/fast_lms"
+SQLALCHEMY_DATABASE_URL = "postgresql://postgres:rootroot@localhost/iitj-classroom"
+
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL, connect_args={}, future=True
